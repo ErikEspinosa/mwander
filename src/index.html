@@ -51,20 +51,22 @@
                     <h2 class="text-white text-5xl content-center mb-4 md:mb-0">Let’s talk</h2>
                 </div>
                 <div>
-                    <form class="w-full md:w-96" action="">
+                    <form id="contact-form" class="w-full md:w-96" action="https://formspree.io/f/xrgnnvzk" method="POST">
                         <label class="text-white text-2xl mb-2" for="name">Name</label>
-                        <input class="w-full text-xl px-2 mb-6" type="text" name="name" id="name">
-                        <label class="text-white text-2xl mb-2" for="phone">Phone</label>
-                        <input class="w-full text-xl px-2 mb-6" type="number" name="phone" id="phone">
+                        <input class="w-full text-xl px-2 mb-6" type="text" name="name" id="name" required>
+                        <label class="text-white text-xl mb-2" for="phone">Phone</label>
+                        <input class="w-full text-xl px-2 mb-6" type="number" name="phone" id="phone" required>
                         <label class="text-white text-2xl mb-2" for="email">Email</label>
-                        <input class="w-full text-xl px-2 mb-6" type="email" name="email" id="email">
+                        <input class="w-full text-xl px-2 mb-6" type="email" name="email" id="email" required>
                         <label class="text-white text-2xl mb-2" for="message">Your message</label>
-                        <textarea class="w-full h-20 text-xl px-2 mb-6" name="message" id="message"></textarea>
-                        <input class="text-white font-bold text-4xl ml-auto" type="submit" value="send">
+                        <textarea class="w-full h-20 text-xl px-2 mb-6" name="message" id="message" required></textarea>
+                        <button name="submit" type="submit" class="flex ml-auto text-white font-bold text-4xl cursor-pointer">send</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
